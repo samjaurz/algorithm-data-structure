@@ -1,27 +1,27 @@
 """
--Bubble sort is algorithms of ordenamiento.
--Orden the numbers from smallest to biggest or biggest to smallest
--Recibe un arreglo de n cantidad de elementos el cual tiene un tiempo de ejecucion n(o^2)
--Hace la comparacion de elementos basado en indice
--Al recorrrer el arreglo si la comparacion es verdadera intercambiar la posicion de interacion
- element[j] por la posicion de la iteracion mas 1 element[j+1].
--Al final de la primera iteracion el ultimo valor puesto en el array sera el mayor o el menor dependiendo de el caso.
+Bubble sort
+Time complexity: O(n^2)
+It is a sorting algorithm.
+1.Compare the current number with the number of the right:
+    Less than. Move on to next iteration.
+    Greater than. The current element and swap with the element of the right.
+2.At the end of the first iteration the last value will be the greatest value of the list.
+    Skip the last i position because its already sorted.
+3.Repeat until the list is sorted. 
 """
 
-def bubble_sort(element: list) -> list:
+def bubble_sort(elements: list) -> list:
 
-    long = len(element)
+    long = len(elements)
     for i in range(long):
         for j in range(long-1-i):
-            # sort smallest to biggest >, sort biggest to smallest <
-            if element[j] > element[j+1]:
-                element[j], element[j+1] = element[j+1], element[j]
+            if elements[j] > elements[j+1]:
+                elements[j], elements[j+1] = elements[j+1], elements[j]
     
-    return element
-
+    return elements
 
 
 if __name__ == '__main__':
 
-    print(bubble_sort([1,2,5,2,80,1]))
+    print(bubble_sort([1,9,5,2,80,1]))
     print(bubble_sort([4,3,2,1,1,3]))
