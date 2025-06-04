@@ -22,9 +22,10 @@ each of which contains data and a pointer that references the next node.
 ### Single Linked List
 Traversal movement is only allowed,    
 from the head [Fisrt node] to the tail [Last node = None]
-**Nodo**: [ Data | Next pointer ]  
-
+**Nodo**: [ Data | Next pointer ]    
 [1 | next ] ⇒ [2 | next  ] ⇒ ... ⇒ Null  
+
+Code
 ---
 ```python
 Class Node:
