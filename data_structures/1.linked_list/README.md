@@ -6,7 +6,7 @@ each of which contains data and a pointer that references the next node.
 
 
 ## Types of linked list 
-- 1Single Linked List  
+- Single Linked List  
 - Doubly Linked List  
 - Circular Linked List  
 
@@ -33,6 +33,8 @@ Class Node:
         self.data = data
         self.next = None
 
+---
 ## Doubly Linked List
-
+s
+s
 
