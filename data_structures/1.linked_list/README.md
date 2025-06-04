@@ -20,14 +20,17 @@ each of which contains data and a pointer that references the next node.
 
 
 ### Single Linked List
-Traversal movement is only allowed,  
-From the head [Fisrt Node] to the tail [Last Node = None]
-Nodo: [ Data | Pointer ]  
+Traversal movement is only allowed,    
+from the head [Fisrt node] to the tail [Last node = None]
+**Nodo**: [ Data | Next pointer ]  
 
-[1 | o-> ] ⇒ [2 | o->  ] -> ... -> Null  
-
-Python Implementation  
-
+[1 | next ] ⇒ [2 | next  ] ⇒ ... ⇒ Null  
+---
+```python
+Class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
 
 ## Doubly Linked List
 
