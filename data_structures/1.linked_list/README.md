@@ -21,10 +21,13 @@ each of which contains data and a pointer that references the next node.
 
 ### Single Linked List
 Traversal movement is only allowed,  
-From the head[Fisrt Node] to the tail[Last Node] = Null  
+From the head [Fisrt Node] to the tail [Last Node = None]
 Nodo: [ Data | Pointer ]  
 
-[1 | ->] -> [2 | ->] -> ... -> Null  
+[1 | o-> ] ⇒ [2 | o->  ] -> ... -> Null  
+
+Python Implementation  
+
 
 ## Doubly Linked List
 
