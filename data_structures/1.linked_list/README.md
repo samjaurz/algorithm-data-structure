@@ -6,35 +6,57 @@ each of which contains data and a pointer that references the next node.
 
 
 ## Types of linked list 
-- Single Linked List  
-- Doubly Linked List  
-- Circular Linked List  
+- Single linked list  
+- Doubly linked list  
+- Circular linked list  
 
 ## Common operations
 - Insertion
 - Deletion
-- Traversal 
 - Searching
 - Updating
 
 
 
-### Single Linked List
+### Single linked list
 Traversal movement is only allowed,    
 from the head [Fisrt node] to the tail [Last node = None]
 **Nodo**: [ Data | Next pointer ]    
-[1 | next ] ⇒ [2 | next  ] ⇒ ... ⇒ Null  
+[1 | next ] ⇒ [2 | next  ] ⇒ ... ⇒ None
 
 Code
 ---
 ```python
-Class Node:
-    def __init__(self,data):
+    class Node:
+        def __init__(self,data):
+            self.data = data
+            self.next = None
+```
+## Doubly linked list
+Traversal movement allowed in both directions  
+from the head [Fisrt node] to the tail [Last node = None] and backward.  
+**Nodo**: [ Previous pointer | Data | Next pointer ]    
+None ⇐ [ prev | 1 | next ] ⇐⇒ [ prev | 2 | next ] ⇐⇒ [ prev| 3| next ] ⇐⇒ ..... None
+
+Code  
+---  
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = None
+```
+## Circular linked list
+Travesarl movemenet goes in circular
+The tail [Last node] points back to the head [First node]
+**Nodo** : [1 | next ] ⇒ [2 | next ] ⇒ [3 | next ] ⇒ head
+
+Code  
+---  
+```python
+class Node:
+    def __init__(self, data):
         self.data = data
         self.next = None
-
----
-## Doubly Linked List
-s
-s
-
+```
