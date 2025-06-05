@@ -1,8 +1,11 @@
 
 # Linked List
 
-It is a data structure characterized by having nodes.  
-each of which contains data and a pointer that references the next node.  
+A linked list is a linear data structure consisting of a sequence of nodes.
+each of which contains two parts:
+    1. Data: the element
+    2. Pointer: references to next node. 
+The first Node is called the head, the last node tail point to null.  
 
 
 ## Types of linked list 
